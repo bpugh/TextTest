@@ -1,11 +1,14 @@
 using System.Collections.Generic;
-using TextAnalyzer.Controllers;
-using TextAnalyzer.Models;
 
 namespace TextAnalyzer.Analyzer
 {
     public class TextAnalyzerService : ITextAnalyzerService
     {
+        /// <summary>
+        /// Counts the occurences of each letter found in specified text.
+        /// </summary>
+        /// <param name="text">The text to analyze.</param>
+        /// <returns>Dictionary with an entry for each letter found in text</returns>
         public Dictionary<char, int> CountLetters(string text)
         {
             var counts = new Dictionary<char, int>();
@@ -27,11 +30,5 @@ namespace TextAnalyzer.Analyzer
             return counts;
         }
 
-        public TextAnalysis AnalyzeText(string text)
-        {
-            var result = new TextAnalysis();
-            result.LetterCounts = CountLetters(text);
-            return result;
-        }
     }
 }

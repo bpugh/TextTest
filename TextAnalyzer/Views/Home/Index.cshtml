@@ -4,7 +4,7 @@
 <h2>@ViewBag.Message</h2>
 @using (Html.BeginForm("AnalyzeText", "Home", FormMethod.Post))
 {
-    @Html.TextArea("textToAnalyze")
+    @Html.TextArea("textToAnalyze", new {id = "textToAnalyze"})
     <p>
         <input type="submit" value="Analyze Text" class="analyzeButton" />
     </p>

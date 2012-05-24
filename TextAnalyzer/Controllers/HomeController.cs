@@ -26,7 +26,8 @@ namespace TextAnalyzer.Controllers
         [HttpPost]
         public ActionResult AnalyzeText(string textToAnalyze)
         {
-            TextAnalysis result = _textAnalyzer.AnalyzeText(textToAnalyze);
+            var result = new TextAnalysis();
+            result.LetterCounts = _textAnalyzer.CountLetters(textToAnalyze);
             return View(result);
         }
 
