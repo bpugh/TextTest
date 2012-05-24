@@ -1,8 +1,10 @@
 using System.Collections.Generic;
+using TextAnalyzer.Controllers;
+using TextAnalyzer.Models;
 
 namespace TextAnalyzer.Analyzer
 {
-    public class TextAnalyzerService
+    public class TextAnalyzerService : ITextAnalyzerService
     {
         public Dictionary<char, int> CountLetters(string text)
         {
@@ -23,6 +25,13 @@ namespace TextAnalyzer.Analyzer
             }
 
             return counts;
+        }
+
+        public TextAnalysis AnalyzeText(string text)
+        {
+            var result = new TextAnalysis();
+            result.LetterCounts = CountLetters(text);
+            return result;
         }
     }
 }

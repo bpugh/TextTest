@@ -50,6 +50,12 @@
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TextAnalyzer\TextAnalyzer.csproj">
+      <Project>{A6BB158B-5F01-4F8D-B194-D1573793B6F4}</Project>
+      <Name>TextAnalyzer</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

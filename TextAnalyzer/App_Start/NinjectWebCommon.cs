@@ -1,3 +1,5 @@
+using TextAnalyzer.Analyzer;
+
 [assembly: WebActivator.PreApplicationStartMethod(typeof(TextAnalyzer.App_Start.NinjectWebCommon), "Start")]
 [assembly: WebActivator.ApplicationShutdownMethodAttribute(typeof(TextAnalyzer.App_Start.NinjectWebCommon), "Stop")]
 
@@ -53,6 +55,7 @@ namespace TextAnalyzer.App_Start
         /// <param name="kernel">The kernel.</param>
         private static void RegisterServices(IKernel kernel)
         {
+            kernel.Bind<ITextAnalyzerService>().To<TextAnalyzerService>();
         }        
     }
 }

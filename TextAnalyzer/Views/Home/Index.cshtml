@@ -2,9 +2,9 @@
     ViewBag.Title = "Home Page";
 }
 <h2>@ViewBag.Message</h2>
-@using (Html.BeginForm())
+@using (Html.BeginForm("AnalyzeText", "Home", FormMethod.Post))
 {
-    @Html.TextArea("TextToAnalyze")
+    @Html.TextArea("textToAnalyze")
     <p>
         <input type="submit" value="Analyze Text" class="analyzeButton" />
     </p>

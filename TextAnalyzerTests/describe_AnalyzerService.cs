@@ -18,7 +18,7 @@ namespace TextAnalyzerTests
         }
 
         [Test]
-        public void Count_letters_should_count_each_letter()
+        public void Count_letters_should_count_each_letter_occurence()
         {
             // arrange
             var text = "aaabbbcc";
