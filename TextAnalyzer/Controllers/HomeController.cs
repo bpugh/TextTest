@@ -10,7 +10,7 @@ namespace TextAnalyzer.Controllers
     {
         public ActionResult Index()
         {
-            ViewBag.Message = "Welcome to ASP.NET MVC!";
+            ViewBag.Message = "Please enter text to analyze.";
 
             return View();
         }

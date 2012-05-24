@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextAnalyzer", "TextAnalyzer\TextAnalyzer.csproj", "{A6BB158B-5F01-4F8D-B194-D1573793B6F4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextAnalyzerTests", "TextAnalyzerTests\TextAnalyzerTests.csproj", "{00FD18CB-3211-4846-90D2-83E6942947DF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,6 +15,10 @@ Global
 		{A6BB158B-5F01-4F8D-B194-D1573793B6F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A6BB158B-5F01-4F8D-B194-D1573793B6F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A6BB158B-5F01-4F8D-B194-D1573793B6F4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{00FD18CB-3211-4846-90D2-83E6942947DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00FD18CB-3211-4846-90D2-83E6942947DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00FD18CB-3211-4846-90D2-83E6942947DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00FD18CB-3211-4846-90D2-83E6942947DF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
